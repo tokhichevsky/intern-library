@@ -1,0 +1,58 @@
+@import "../../styles/index.scss";
+
+.root {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  background-color: $color-primary;
+  border-radius: $border-radius-small;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .input {
+    @include remove_input_default_styles;
+    width: 100%;
+    font-size: 16px;
+    color: $color-secondary;
+    font-family: inherit;
+
+    &::placeholder {
+      color: $color-gray
+    }
+  }
+
+  .endAdornment {
+    margin-left: 6px;
+    max-width: 16px;
+    max-height: 16px;
+  }
+
+  .startAdornment {
+    margin-right: 6px;
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  &_large {
+    border-radius: $border-radius-default;
+    height: 50px;
+    padding: 14px;
+
+    .input {
+      font-size: 18px;
+    }
+
+    .endAdornment {
+      margin-left: 10px;
+      max-width: 22px;
+      max-height: 22px;
+    }
+
+    .startAdornment {
+      margin-right: 10px;
+      max-width: 22px;
+      max-height: 22px;
+    }
+  }
+}

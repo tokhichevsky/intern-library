@@ -1,0 +1,33 @@
+@import "../../styles/index.scss";
+
+.root {
+  display: flex;
+
+  .page {
+    cursor: pointer;
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    .dot {
+      @include transition(background-color);
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background-color: $color-primary;
+
+      &:hover {
+        background-color: lighten($color-primary, 10%);
+      }
+    }
+
+    &_active {
+      .dot {
+        background-color: white !important;
+      }
+    }
+
+  }
+}

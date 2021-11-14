@@ -1,0 +1,27 @@
+$color-primary: #B09A81;
+$color-primary-hover: #DAAF7C;
+$color-primary-active: #B08F67;
+$color-secondary: #462929;
+$color-green: #1F4F3B;
+$color-green-hover: #2D653A;
+$color-green-active: #296036;
+$color-gray: #796A58;
+$color-blue: #123856;
+$color-orange: #cba34a;
+$color-red: #512C38;
+
+$color-text-primary: $color-primary;
+$color-text-secondary: $color-secondary;
+
+$font-size-default: 14px;
+$border-radius-default: 8px;
+$border-radius-small: 4px;
+
+$colors: (
+        primary: $color-primary,
+        secondary: #764051,
+        success: $color-green,
+        info: $color-blue,
+        warning: $color-orange,
+        danger: $color-red
+);

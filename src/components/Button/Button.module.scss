@@ -1,0 +1,46 @@
+@import "../../styles/index.scss";
+
+.root {
+  @include remove_button_default_styles;
+  @include transition(background-color);
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: $border-radius-default;
+
+  &_large {
+    font-size: 20px;
+    padding: 17px 30px;
+  }
+
+  &_small {
+    font-size: 14px;
+    padding: 6px 24px;
+  }
+
+  &_primary {
+    background-color: $color-primary;
+    color: $color-text-secondary;
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+
+    &:active {
+      background-color: $color-primary-active;
+    }
+  }
+
+  &_green {
+    background-color: $color-green;
+    color: $color-text-primary;
+
+    &:hover {
+      background-color: $color-green-hover;
+    }
+
+    &:active {
+      background-color: $color-green-active;
+    }
+  }
+}
+

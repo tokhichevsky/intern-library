@@ -1,0 +1,48 @@
+@import "../../styles/index.scss";
+
+.root {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: $color-secondary;
+
+  .input {
+    display: none;
+  }
+
+  .checkbox {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    border: 2px solid $color-secondary;
+    box-sizing: border-box;
+    margin-right: 5px;
+    @include transition(border-color, background-color);
+
+    &_checked {
+      border-color: $color-green;
+      background-color: $color-green;
+      color: $color-primary;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: "✓";
+      }
+    }
+
+    &_disabled {
+      border-color: $color-gray !important;
+      background-color: $color-gray;
+    }
+  }
+
+  &:hover {
+    .checkbox {
+      border-color: $color-green;
+    }
+  }
+}

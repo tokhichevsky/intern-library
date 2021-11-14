@@ -1,0 +1,39 @@
+@import "../../styles/index.scss";
+
+.root {
+  @include transition(opacity);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+
+  &_visible {
+    opacity: 1;
+    z-index: 1000;
+  }
+
+  .modal {
+    padding: 30px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    z-index: 1;
+    background: linear-gradient(180deg, #2A2C35 52.6%, #000000 100%);
+    mix-blend-mode: normal;
+    border-radius: $border-radius-default;
+
+    .closeButton {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+    }
+  }
+}
+

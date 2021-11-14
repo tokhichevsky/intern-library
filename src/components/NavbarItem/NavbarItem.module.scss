@@ -1,0 +1,19 @@
+@import "../../styles/index.scss";
+
+.root {
+  @include transition(color);
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 26px;
+  color: $color-text-primary;
+  margin: 0 15px;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary-hover;
+  }
+
+  &:active {
+    color:  $color-primary-active;
+  }
+}

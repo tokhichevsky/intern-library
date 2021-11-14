@@ -1,0 +1,31 @@
+.background {
+  background-color: #5C6353;
+}
+
+.redSquare {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+}
+
+.columnItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    margin: 10px;
+  }
+}
+
+.rowItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../styles/index.scss";
+
+.root {
+  padding: 5px 10px;
+  font-size: 8px;
+  border-radius: $border-radius-small;
+  color: white;
+
+  @include use-colors;
+}
