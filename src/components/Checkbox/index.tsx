@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TCheckboxProps } from "components/Checkbox/Checkbox.type";
+import { TCheckboxProps } from "./Checkbox.type";
 import React, { FC, useCallback, useEffect, useState } from "react";
 import styles from "./Checkbox.module.scss";
 

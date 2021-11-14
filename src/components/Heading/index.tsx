@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { THeadingProps } from "components/Heading/Heading.type";
+import { THeadingProps } from "./Heading.type";
 import React, { FC } from "react";
 import styles from './Heading.module.scss';
 

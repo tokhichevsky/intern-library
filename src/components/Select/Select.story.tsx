@@ -1,6 +1,6 @@
 import { storiesOf } from "@storybook/react";
 import cn from "classnames";
-import { TSelectOption } from "components/Select/Select.type";
+import { TSelectOption } from "./Select.type";
 import Select from "../Select";
 import * as React from "react";
 import styles from "../../styles/storybook.module.scss";

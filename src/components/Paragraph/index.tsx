@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TParagraphProps } from "components/Paragraph/Paragraph.type";
+import { TParagraphProps } from "./Paragraph.type";
 import React, { FC } from "react";
 import styles from './Paragraph.module.scss';
 

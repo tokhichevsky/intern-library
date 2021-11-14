@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TInputProps } from "components/Input/Input.type";
+import { TInputProps } from "./Input.type";
 import React from "react";
 import { FC } from "react";
 import styles from './Input.module.scss';

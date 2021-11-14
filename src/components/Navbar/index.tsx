@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TNavbarProps } from "components/Navbar/Navbar.type";
+import { TNavbarProps } from "./Navbar.type";
 import React from "react";
 import { FC } from "react";
 import styles from './Navbar.module.scss';

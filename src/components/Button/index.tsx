@@ -1,7 +1,7 @@
 import cn from "classnames";
 import React from "react";
 import { FC } from "react";
-import { TButtonProps } from "components/Button/Button.type";
+import { TButtonProps } from "./Button.type";
 import styles from './Button.module.scss';
 
 const Button: FC<TButtonProps> = (props: TButtonProps) => {

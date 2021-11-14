@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TTextAreaProps } from "components/TextArea/TextArea.type";
+import { TTextAreaProps } from "./TextArea.type";
 import React, { FC } from "react";
 import styles from "./TextArea.module.scss";
 

@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { ArrowLeft, ArrowRight } from "../Icons";
-import { TPaginationProps } from "components/Pagination/Pagination.type";
+import { TPaginationProps } from "./Pagination.type";
 import React, { FC, useCallback, useEffect, useMemo, useState } from "react";
 import IconButton from "../IconButton";
 import styles from "./Pagination.module.scss";

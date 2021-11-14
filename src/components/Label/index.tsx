@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TLabelProps } from "components/Label/Label.type";
+import { TLabelProps } from "./Label.type";
 import React from "react";
 import { FC } from "react";
 import styles from './Label.module.scss';

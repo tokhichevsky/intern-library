@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TIconButtonProps } from "components/IconButton/IconButton.type";
+import { TIconButtonProps } from "./IconButton.type";
 import React, { FC } from "react";
 import styles from "./IconButton.module.scss";
 

@@ -1,6 +1,6 @@
 import cn from "classnames";
 import IconButton from "../IconButton";
-import { TModalProps } from "components/Modal/Modal.type";
+import { TModalProps } from "./Modal.type";
 import React, { FC, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Close } from "../Icons";

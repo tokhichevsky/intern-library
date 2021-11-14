@@ -1,4 +1,4 @@
-import { TNavbarItemProps } from "components/NavbarItem/NavbarItem.type";
+import { TNavbarItemProps } from "./NavbarItem.type";
 import React, { AnchorHTMLAttributes, ComponentType, DetailedHTMLProps, FC } from "react";
 import styles from "./NavbarItem.module.scss";
 

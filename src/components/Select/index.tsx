@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { TSelectOption, TSelectProps } from "components/Select/Select.type";
+import { TSelectOption, TSelectProps } from "./Select.type";
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { convertToArray } from "../../utils";
 import Checkbox from "../Checkbox";
