@@ -42,7 +42,7 @@ const ImageUploader: FC<TImageUploaderProps> = (props: TImageUploaderProps) => {
   const containerStyles = useMemo(() => {
     return {
       backgroundImage: image ? `url(${image})` : undefined,
-      backgroundSize: "contain",
+      backgroundSize: "cover",
     }
   }, [image]);
 
