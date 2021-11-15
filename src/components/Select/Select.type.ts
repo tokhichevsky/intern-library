@@ -1,9 +1,8 @@
 import { CSSProperties, FocusEventHandler } from "react";
 
 export type TSelectOption = {
-  key: string
+  id: string
   value: string;
-  label: string;
 }
 
 export type TSelectProps = {

@@ -13,7 +13,7 @@ const Select: FC<TSelectProps> = (props: TSelectProps) => {
 
   const selectedElementsCount: number = useMemo(() => selected.length, [selected.length]);
   const text: string | undefined = useMemo(
-    () => multiple && placeholder ? placeholder : selected.length ? selected[0].label : placeholder,
+    () => multiple && placeholder ? placeholder : selected.length ? selected[0].value : placeholder,
     [selected, placeholder, multiple]
   );
 
@@ -74,8 +74,8 @@ const Select: FC<TSelectProps> = (props: TSelectProps) => {
         <div className={styles.menu} style={{ width: wrapperRef.current?.offsetWidth }}>
           {options?.map((option) => (
             <Checkbox
-              key={option.key}
-              label={option.label}
+              key={option.id}
+              label={option.value}
               value={checkIsSelected(option)}
               onChange={getChangeHandler(option)}
               className={styles.option}

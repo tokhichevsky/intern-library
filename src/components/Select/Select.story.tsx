@@ -9,34 +9,28 @@ const stories = storiesOf("Fields", module);
 
 const options: TSelectOption[] = [
   {
-    key: "1",
-    value: "1",
-    label: "Собака"
+    id: "1",
+    value: "Собака"
   },
   {
-    key: "2",
-    value: "2",
-    label: "Черепаха"
+    id: "2",
+    value: "Черепаха"
   },
   {
-    key: "3",
-    value: "3",
-    label: "Тигр"
+    id: "3",
+    value: "Тигр"
   },
   {
-    key: "4",
-    value: "4",
-    label: "Слон"
+    id: "4",
+    value: "Слон"
   },
   {
-    key: "5",
-    value: "5",
-    label: "Лиса"
+    id: "5",
+    value: "Лиса"
   },
   {
-    key: "6",
-    value: "6",
-    label: "Кошка"
+    id: "6",
+    value: "Кошка"
   },
 ]
 
