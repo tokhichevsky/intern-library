@@ -260,7 +260,6 @@ var Modal = function (props) {
             onOpen === null || onOpen === void 0 ? void 0 : onOpen();
         }
     }, [open, onOpen]);
-    console.log(className);
     return reactDom.createPortal(React__default["default"].createElement("div", { role: "dialog", className: classnames(styles$9.root, (_a = {}, _a[styles$9.root_visible] = open, _a)), style: { zIndex: zIndex } },
         React__default["default"].createElement("div", { className: classnames(styles$9.modal, className), style: modalStyles },
             React__default["default"].createElement(IconButton, { className: styles$9.closeButton, onClick: onClose },
@@ -345,7 +344,7 @@ var Select = function (props) {
     var _d = React.useState(convertToArray(value)), selected = _d[0], setSelected = _d[1];
     var wrapperRef = React.useRef(null);
     var selectedElementsCount = React.useMemo(function () { return selected.length; }, [selected.length]);
-    var text = React.useMemo(function () { return multiple && placeholder ? placeholder : selected.length ? selected[0].label : placeholder; }, [selected, placeholder, multiple]);
+    var text = React.useMemo(function () { return multiple && placeholder ? placeholder : selected.length ? selected[0].value : placeholder; }, [selected, placeholder, multiple]);
     var checkIsSelected = React.useCallback(function (option) {
         return !!selected.find(function (selectedOption) { return selectedOption.value === option.value; });
     }, [selected]);
@@ -384,7 +383,7 @@ var Select = function (props) {
             text,
             multiple && !!selectedElementsCount && React__default["default"].createElement("div", { className: styles$4.count }, selectedElementsCount),
             React__default["default"].createElement("div", { className: styles$4.caret })),
-        isOpen && (React__default["default"].createElement("div", { className: styles$4.menu, style: { width: (_b = wrapperRef.current) === null || _b === void 0 ? void 0 : _b.offsetWidth } }, options === null || options === void 0 ? void 0 : options.map(function (option) { return (React__default["default"].createElement(Checkbox, { key: option.key, label: option.label, value: checkIsSelected(option), onChange: getChangeHandler(option), className: styles$4.option })); })))));
+        isOpen && (React__default["default"].createElement("div", { className: styles$4.menu, style: { width: (_b = wrapperRef.current) === null || _b === void 0 ? void 0 : _b.offsetWidth } }, options === null || options === void 0 ? void 0 : options.map(function (option) { return (React__default["default"].createElement(Checkbox, { key: option.id, label: option.value, value: checkIsSelected(option), onChange: getChangeHandler(option), className: styles$4.option })); })))));
 };
 Select.defaultProps = {
     multiple: false,
@@ -473,7 +472,7 @@ var ImageUploader = function (props) {
     var containerStyles = React.useMemo(function () {
         return {
             backgroundImage: image ? "url(" + image + ")" : undefined,
-            backgroundSize: "contain",
+            backgroundSize: "cover",
         };
     }, [image]);
     return (React__default["default"].createElement("div", __assign({ className: classnames(styles.root, className) }, otherProps),
