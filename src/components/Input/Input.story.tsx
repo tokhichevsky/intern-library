@@ -5,7 +5,7 @@ import styles from "../../styles/storybook.module.scss";
 import Input from "../Input";
 import Label from "../Label";
 
-const stories = storiesOf("UI", module);
+const stories = storiesOf("Fields", module);
 
 stories.add(
   "Input",

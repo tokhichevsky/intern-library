@@ -1,0 +1,62 @@
+@import "../../styles/index";
+
+.root {
+  .controls {
+    margin-top: 10px;
+
+    .controlButton {
+      padding: 6px 9px;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .container {
+    height: 210px;
+    width: 190px;
+    background-color: $color-primary;
+    border-radius: $border-radius-small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    &_hasImage {
+      .addButton {
+        display: none;
+      }
+
+      .urlButton {
+        display: none;
+      }
+    }
+
+    .addButton {
+      margin: 50px auto auto;
+    }
+
+    .urlButton {
+      margin-top: auto;
+      padding: 8px 20px;
+    }
+
+    .input {
+      display: none;
+    }
+  }
+}
+
+.modal {
+  height: 180px !important;
+
+  .modalContent {
+    width: 80%;
+  }
+
+  .modalSaveButton {
+    margin-top: 20px;
+  }
+}

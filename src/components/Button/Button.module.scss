@@ -6,6 +6,14 @@
   padding: 15px 30px;
   font-size: 18px;
   border-radius: $border-radius-default;
+  border: 1px solid transparent;
+
+  &_disabled {
+    color: $color-gray !important;
+    background-color: rgba($color-gray, 0.2) !important;
+    border: 1px solid $color-gray !important;
+    cursor: default !important;
+  }
 
   &_large {
     font-size: 20px;
@@ -13,6 +21,7 @@
   }
 
   &_small {
+    border-radius: $border-radius-small;
     font-size: 14px;
     padding: 6px 24px;
   }
@@ -40,6 +49,22 @@
 
     &:active {
       background-color: $color-green-active;
+    }
+  }
+
+  &_negative {
+    @include transition(border-color, color);
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
+
+    &:hover {
+      border-color: black;
+      color: black;
+    }
+
+    &:active {
+      border-color: $color-secondary;
+      color: $color-secondary;
     }
   }
 }

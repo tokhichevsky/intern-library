@@ -13,6 +13,7 @@ const IconButton: FC<TIconButtonProps> = (props: TIconButtonProps) => {
       className={cn(styles.root, otherProps.className, {
         [styles.root_primary]: color === "primary",
         [styles.root_green]: color === "green",
+        [styles.root_negative]: color === "negative",
         [styles.root_disabled]: disabled,
       })}>
       {children}

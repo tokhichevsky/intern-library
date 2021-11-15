@@ -32,4 +32,16 @@
       color: $color-green-active;
     }
   }
+
+  &_negative {
+    color: $color-secondary;
+
+    &:hover {
+      color: black;
+    }
+
+    &:active {
+      color: $color-secondary;
+    }
+  }
 }

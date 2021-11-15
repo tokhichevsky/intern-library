@@ -3,4 +3,8 @@
 .root {
   color: $color-text-primary;
   padding-bottom: 3px;
+
+  > *:nth-child(1) {
+    margin-top: 5px;
+  }
 }

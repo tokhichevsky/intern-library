@@ -4,6 +4,7 @@ interface CssExports {
   'root': string;
   'root_disabled': string;
   'root_green': string;
+  'root_negative': string;
   'root_primary': string;
 }
 export const cssExports: CssExports;

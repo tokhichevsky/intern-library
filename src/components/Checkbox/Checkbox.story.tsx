@@ -4,7 +4,7 @@ import Checkbox from "../Checkbox";
 import * as React from "react";
 import styles from "../../styles/storybook.module.scss";
 
-const stories = storiesOf("UI", module);
+const stories = storiesOf("Fields", module);
 
 stories.add(
   "Checkbox",

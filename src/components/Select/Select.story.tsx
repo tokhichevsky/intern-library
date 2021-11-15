@@ -5,7 +5,7 @@ import Select from "../Select";
 import * as React from "react";
 import styles from "../../styles/storybook.module.scss";
 
-const stories = storiesOf("UI", module);
+const stories = storiesOf("Fields", module);
 
 const options: TSelectOption[] = [
   {

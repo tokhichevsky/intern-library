@@ -27,6 +27,10 @@ import Tag from "./components/Tag";
 import { TTagProps } from "./components/Tag/Tag.type";
 import TextArea from "./components/TextArea";
 import { TTextAreaProps } from "./components/TextArea/TextArea.type";
+import ColorPicker from "./components/ColorPicker";
+import ImageUploader from "./components/ImageUploader";
+import { TColorPickerProps } from "./components/ColorPicker/ColorPicker.type";
+import { TImageUploaderProps } from "./components/ImageUploader/ImageUploader.type";
 
 
 export {
@@ -44,7 +48,9 @@ export {
   Paragraph,
   Select,
   Tag,
-  TextArea
+  TextArea,
+  ColorPicker,
+  ImageUploader,
 };
 export type {
   TButtonProps,
@@ -61,4 +67,6 @@ export type {
   TSelectProps,
   TTagProps,
   TTextAreaProps,
+  TColorPickerProps,
+  TImageUploaderProps,
 };

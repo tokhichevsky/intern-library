@@ -1,16 +1,18 @@
 import { storiesOf } from "@storybook/react";
 import cn from "classnames";
-import TextArea from "../TextArea";
+import ColorPicker from "../ColorPicker";
 import * as React from "react";
 import styles from "../../styles/storybook.module.scss";
 
 const stories = storiesOf("Fields", module);
 
 stories.add(
-  "TextArea",
+  "ColorPicker",
   () => (
     <div className={cn(styles.columnItems, styles.background)}>
-      <TextArea placeholder="Напишите рассказ" />
+      <ColorPicker value="#ffffff" label="Цвет имени" />
+      <ColorPicker value="#ffffff" label="Цвет фона параметров" />
+      <ColorPicker value="#ffffff" label="Цвет параметров" />
     </div>
   )
 );

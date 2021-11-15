@@ -1,16 +1,16 @@
 import { storiesOf } from "@storybook/react";
 import cn from "classnames";
-import TextArea from "../TextArea";
 import * as React from "react";
 import styles from "../../styles/storybook.module.scss";
+import ImageUploader from "./index";
 
 const stories = storiesOf("Fields", module);
 
 stories.add(
-  "TextArea",
+  "ImageUploader",
   () => (
     <div className={cn(styles.columnItems, styles.background)}>
-      <TextArea placeholder="Напишите рассказ" />
+      <ImageUploader/>
     </div>
   )
 );
