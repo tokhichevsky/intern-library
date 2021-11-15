@@ -39,14 +39,13 @@ function __rest(s, e) {
     return t;
 }
 
-function __spreadArray(to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
+/** @deprecated */
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
 }
 
 function createCommonjsModule(fn, module) {
@@ -332,7 +331,7 @@ var Select = function (props) {
     }, [selected]);
     var getChangeHandler = useCallback(function (option) { return function (checked) {
         if (checked) {
-            var newValue = multiple ? __spreadArray(__spreadArray([], selected, true), [option], false) : option;
+            var newValue = multiple ? __spreadArrays(selected, [option]) : option;
             onChange === null || onChange === void 0 ? void 0 : onChange(newValue);
             setSelected(convertToArray(newValue));
         }
