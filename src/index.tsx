@@ -22,7 +22,7 @@ import { TPaginationProps } from "./components/Pagination/Pagination.type";
 import Paragraph from "./components/Paragraph";
 import { TParagraphProps } from "./components/Paragraph/Paragraph.type";
 import Select from "./components/Select";
-import { TSelectProps } from "./components/Select/Select.type";
+import { TSelectOption, TSelectProps } from "./components/Select/Select.type";
 import Tag from "./components/Tag";
 import { TTagProps } from "./components/Tag/Tag.type";
 import TextArea from "./components/TextArea";
@@ -69,4 +69,5 @@ export type {
   TTextAreaProps,
   TColorPickerProps,
   TImageUploaderProps,
+  TSelectOption,
 };
